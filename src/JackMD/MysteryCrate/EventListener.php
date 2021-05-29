@@ -45,7 +45,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\level\particle\FloatingTextParticle;
-use pocketmine\level\particle\LavaParticle;
+use pocketmine\level\particle\HeartParticle;
 use pocketmine\math\Vector3;
 use pocketmine\utils\TextFormat;
 
@@ -204,7 +204,7 @@ class EventListener implements Listener{
 					}
 
 					//Particle upon opening chest
-					$cx = $block->getX() + 0.5;
+					/**$cx = $block->getX() + 0.5;
 					$cy = $block->getY() + 1.2;
 					$cz = $block->getZ() + 0.5;
 					$radius = (int) 1;
@@ -212,7 +212,7 @@ class EventListener implements Listener{
 						$x = $cx + ($radius * cos($i));
 						$z = $cz + ($radius * sin($i));
 						$pos = new Vector3($x, $cy, $z);
-						$block->level->addParticle(new LavaParticle($pos));
+						$block->level->addParticle(new LavaParticle($pos));*/
 					}
 				}
 			}
